@@ -44,13 +44,27 @@
         <section id="projects">
             <div class="container">
                 <h2>Projects</h2>
+<div class="project">
+    <h3>Inverted Pendulum Control System</h3>
 
-                <div class="project">
-                    <h3>Inverted Pendulum Control System</h3>
-                    <p>
-                        Designed and implemented a PID-based feedback control system for an inverted pendulum using real-time sensor data and a motor actuator. The system continuously corrected instability, strengthening my understanding of closed-loop control, tuning parameters, and dynamic system stability.
-                    </p>
-                </div>
+    <p>
+        Designed and implemented a real-time inverted pendulum control system using an MPU6050
+        IMU and a PID-based feedback loop. A complementary filter fused accelerometer and gyroscope
+        data to estimate tilt angle, while proportional control dynamically adjusted motor PWM output
+        to maintain upright stability.
+    </p>
+
+    <p>
+        The system runs on a microcontroller with high-speed I2C communication, real-time sensor
+        fusion, and motor direction control via an H-bridge. Gain tuning was performed live through
+        serial input to study system response and stability.
+    </p>
+
+    <a class="btn" href="code/inverted_pendulum_pid.ino" target="_blank">
+        View Control Code
+    </a>
+</div>
+
 
                 <div class="project">
                     <h3>Origami-Inspired Crash Structures</h3>
