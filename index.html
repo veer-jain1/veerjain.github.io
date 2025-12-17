@@ -1,145 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Veer Jain | Engineering Portfolio</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Veer Jain | Portfolio</title>
 
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: Arial, Helvetica, sans-serif;
-    }
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
 
-    body {
-      background: #0f172a;
-      color: #e5e7eb;
-      line-height: 1.6;
-    }
-
-    header {
-      padding: 3rem 10%;
-      background: #020617;
-    }
-
-    header h1 {
-      font-size: 3rem;
-      color: #38bdf8;
-    }
-
-    header p {
-      max-width: 750px;
-      margin-top: 1rem;
-      font-size: 1.1rem;
-    }
-
-    section {
-      padding: 3rem 10%;
-    }
-
-    h2 {
-      color: #38bdf8;
-      margin-bottom: 1.5rem;
-      font-size: 2rem;
-    }
-
-    .card {
-      background: #020617;
-      padding: 1.5rem;
-      border-radius: 12px;
-      margin-bottom: 1.5rem;
-      box-shadow: 0 10px 25px rgba(0,0,0,0.3);
-    }
-
-    .card h3 {
-      margin-bottom: 0.8rem;
-    }
-
-    .tags span {
-      display: inline-block;
-      background: #1e293b;
-      padding: 0.3rem 0.6rem;
-      border-radius: 6px;
-      margin: 0.3rem 0.3rem 0 0;
-      font-size: 0.85rem;
-    }
-
-    a {
-      color: #38bdf8;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    footer {
-      text-align: center;
-      padding: 2rem;
-      background: #020617;
-      color: #94a3b8;
-    }
-  </style>
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-<header>
-  <h1>Veer Jain</h1>
-  <p>
-    Aspiring Mechanical & Automotive Engineer with interests in vehicle dynamics,
-    control systems, aerodynamics, and structural design. I enjoy applying physics,
-    mathematics, and computation to real-world engineering problems.
-  </p>
+    <!-- HERO SECTION -->
+    <header id="hero">
+        <div class="container">
+            <h1>Veer Jain</h1>
 
-  <div class="tags" style="margin-top:1rem;">
-    <span>Formula 1 Engineering</span>
-    <span>Automotive Design</span>
-    <span>Cars</span>
-    <span>Car Photography</span>
-  </div>
-</header>
+            <p class="bio">
+                A high-school student passionate about Mechanical and Automotive Engineering, with a strong interest in vehicle dynamics, aerodynamics, and innovative control systems. Aspiring to contribute to the automotive industry through engineering-driven design and analysis.
+            </p>
 
-<section>
-  <h2>Research</h2>
+            <div class="interests">
+                <h2>Interests</h2>
+                <ul>
+                    <li>Formula 1</li>
+                    <li>Cars</li>
+                    <li>Automotive Engineering</li>
+                    <li>Car Photography</li>
+                </ul>
+            </div>
 
-  <div class="card">
-    <h3>
-      Design and Numerical Study of Origami-Inspired Structures for Axial Compression
-      and Energy Absorption in Crashworthiness Applications
-    </h3>
+            <div class="contact">
+                <p>Email: <a href="mailto:jainveer936@gmail.com">jainveer936@gmail.com</a></p>
+            </div>
+        </div>
+    </header>
 
-    <p>
-      This research investigates origami-inspired geometries such as Miura-ori and
-      Kresling patterns for crashworthiness applications. Parametric CAD models were
-      developed using Rhino and Grasshopper, followed by finite element simulations
-      in ANSYS to analyse deformation behaviour, stress distribution, and energy
-      absorption under axial compression.
-    </p>
+    <main>
 
-    <p>
-      📄 <a href="papers/Research_Paper_Veer_Jain.pdf" target="_blank">
-      Download Research Paper (PDF)</a>
-    </p>
+        <!-- PROJECTS -->
+        <section id="projects">
+            <div class="container">
+                <h2>Projects</h2>
 
-    <div class="tags">
-      <span>Origami Structures</span>
-      <span>Crashworthiness</span>
-      <span>ANSYS</span>
-      <span>Energy Absorption</span>
-    </div>
-  </div>
-</section>
+                <div class="project">
+                    <h3>Inverted Pendulum Control System</h3>
+                    <p>
+                        Designed and implemented a PID-based feedback control system for an inverted pendulum using real-time sensor data and a motor actuator. The system continuously corrected instability, strengthening my understanding of closed-loop control, tuning parameters, and dynamic system stability.
+                    </p>
+                </div>
 
-<section>
-  <h2>Contact</h2>
-  <div class="card">
-    <p>Email: <a href="mailto:jainveer936@gmail.com">jainveer936@gmail.com</a></p>
-  </div>
-</section>
+                <div class="project">
+                    <h3>Origami-Inspired Crash Structures</h3>
+                    <p>
+                        Conducted a numerical study on origami-inspired structures for axial compression and energy absorption in crashworthiness applications. The project involved CAD modelling and Finite Element Analysis to evaluate structural performance and optimise impact energy dissipation.
+                    </p>
+                </div>
+            </div>
+        </section>
 
-<footer>
-  <p>© 2025 Veer Jain | Engineering Portfolio</p>
-</footer>
+        <!-- RESEARCH PAPER -->
+        <section id="research">
+            <div class="container">
+                <h2>Research Paper</h2>
 
+                <p>
+                    <strong>Design and Numerical Study of Origami-Inspired Structures for Axial Compression and Energy Absorption in Crashworthiness Applications</strong>
+                </p>
+
+                <a class="btn" href="papers/Research_Paper_Veer_Jain.pdf.pdf" download>
+                    Download PDF
+                </a>
+
+                <!-- 
+                IMPORTANT:
+                Upload your PDF at:
+                veerjain.github.io/papers/Research_Paper_Veer_Jain.pdf.pdf
+                -->
+            </div>
+        </section>
+
+        <!-- SKILLS -->
+        <section id="skills">
+            <div class="container">
+                <h2>Skills & Interests</h2>
+                <ul>
+                    <li>Automotive Engineering</li>
+                    <li>Vehicle Dynamics</li>
+                    <li>Aerodynamics</li>
+                    <li>CAD & Simulation</li>
+                    <li>Control Systems</li>
+                    <li>Formula 1 Analysis</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section id="contact">
+            <div class="container">
+                <h2>Contact</h2>
+                <p>Email: <a href="mailto:jainveer936@gmail.com">jainveer936@gmail.com</a></p>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <p>© 2025 Veer Jain</p>
+        </div>
+    </footer>
+
+    <!-- JS -->
+    <script src="script.js"></script>
 </body>
 </html>
